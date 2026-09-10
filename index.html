@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- css-->
     <link rel="stylesheet" href="css/style.css">
     <!-- favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/img/logo_transparente.png">   
+    <link rel="icon" type="image/x-icon" href="assets/img/logo_transparente.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gerador-qr-code</title>
 </head>
+
 <body>
+
+    <h1> Gerador de qr-code</h1>
+
     <input type="text" id="texto" placeholder="Digite o link">
     <div id="qrcode">
     </div>
+
+    <!-- botao de baixar o QrCode-->
+    <div class="botoes">
+        <button id="baixar">Baixar QR Code</button>
+        <button id="compartilhar">Compartilhar</button>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script src="js/script.js"></script>
 </body>
